@@ -1,0 +1,41 @@
+{
+  "name": "devdocsx",
+  "version": "1.0.0",
+  "description": "Offline documentation for JavaScript, Node, Express, Prisma, Auth, and more. Complete examples and notes inside node_modules.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "devdocsx": "./cli/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "express",
+    "prisma",
+    "jwt",
+    "node",
+    "docs",
+    "backend",
+    "documentation",
+    "tutorial",
+    "examples",
+    "auth",
+    "middleware",
+    "cheatsheet"
+  ],
+  "author": "Harsh Hirawat",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Greenhacker420/devdocsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Greenhacker420/devdocsx/issues"
+  },
+  "homepage": "https://github.com/Greenhacker420/devdocsx#readme"
+}
