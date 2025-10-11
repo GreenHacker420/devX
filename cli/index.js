@@ -38,19 +38,40 @@ if (!topic) {
   console.log(chalk.white('\n  Interview:'));
   console.log(chalk.gray('    interview/javascript-questions, interview/backend-questions'));
   console.log(chalk.gray('    interview/express-questions, interview/prisma-questions, interview/auth-questions'));
-  console.log(chalk.white('\nExample: npx devdocsx javascript/arrays\n'));
+  console.log(chalk.white('\n  🚀 Advanced Topics (add .adv):'));
+  console.log(chalk.gray('    express/file-uploads.adv, express/middleware.adv'));
+  console.log(chalk.gray('    node/fs-module.adv, node/streams.adv'));
+  console.log(chalk.gray('    prisma/crud.adv, javascript/async-await.adv'));
+  console.log(chalk.white('\nExamples:'));
+  console.log(chalk.gray('  npx devdocsx javascript/arrays'));
+  console.log(chalk.gray('  npx devdocsx express/file-uploads.adv\n'));
   process.exit(0);
 }
 
 const docPath = path.resolve(__dirname, '..', 'docs', `${topic}.md`);
+const advDocPath = path.resolve(__dirname, '..', 'docs', `${topic}.adv.md`);
 
 if (fs.existsSync(docPath)) {
   console.log(chalk.greenBright(`\n📘 Reading documentation for: ${topic}\n`));
   const content = fs.readFileSync(docPath, 'utf8');
   console.log(chalk.white(content));
   console.log(chalk.gray('\n─────────────────────────────────────────────────────'));
+  
+  // Check for advanced documentation
+  if (fs.existsSync(advDocPath)) {
+    console.log(chalk.magenta(`\n🚀 Advanced documentation available!`));
+    console.log(chalk.gray(`   Run: npx devdocsx ${topic}.adv\n`));
+  }
+  
   console.log(chalk.cyan(`\n💡 Tip: You can also open this file directly at:`));
   console.log(chalk.gray(`   ${docPath}\n`));
+} else if (fs.existsSync(advDocPath)) {
+  console.log(chalk.greenBright(`\n🚀 Reading advanced documentation for: ${topic.replace('.adv', '')}\n`));
+  const content = fs.readFileSync(advDocPath, 'utf8');
+  console.log(chalk.white(content));
+  console.log(chalk.gray('\n─────────────────────────────────────────────────────'));
+  console.log(chalk.cyan(`\n💡 Tip: You can also open this file directly at:`));
+  console.log(chalk.gray(`   ${advDocPath}\n`));
 } else {
   console.log(chalk.red(`\n❌ Topic not found: ${topic}\n`));
   console.log(chalk.yellow('Run "npx devdocsx" without arguments to see available topics.\n'));

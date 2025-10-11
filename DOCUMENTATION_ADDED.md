@@ -57,7 +57,42 @@ This comprehensive guide covers:
    - Complete image service with caching
    - Sharp with Multer integration
 
-#### 7. **Common MIME Types Reference**
+#### 7. **Advanced PDF Processing**
+   - PDF generation on-the-fly with PDFKit
+   - Merge multiple PDFs
+   - Extract PDF metadata (page count, title, author)
+   - Add watermarks to PDFs
+   - PDF manipulation with pdf-lib
+
+#### 8. **Advanced Video Processing**
+   - Generate video thumbnails
+   - Extract video metadata (duration, codec, resolution, fps)
+   - Convert video formats
+   - Compress videos with quality settings
+   - Extract audio from video
+   - FFmpeg integration
+
+#### 9. **Advanced Document Processing**
+   - Parse Excel files (XLSX)
+   - Convert Excel to CSV
+   - Parse CSV files
+   - Generate Excel from JSON
+   - Filter and export CSV data
+   - XLSX library integration
+
+#### 10. **Advanced Archive Processing**
+   - Create ZIP archives from multiple files
+   - Extract ZIP archives
+   - List ZIP contents
+   - Archiver and unzipper integration
+
+#### 11. **Advanced Audio Processing**
+   - Extract audio metadata (title, artist, album, bitrate)
+   - Convert audio formats
+   - Trim audio files
+   - Music-metadata integration
+
+#### 12. **Common MIME Types Reference**
    - Images (JPG, PNG, GIF, WebP, SVG)
    - Documents (PDF, DOC, DOCX, XLS, XLSX)
    - Text files (TXT, CSV, HTML, CSS, JS, JSON)
@@ -112,15 +147,20 @@ open file-uploads.md
 
 ## Code Examples Included
 
-- **25+ working code examples**
+- **50+ working code examples**
 - Production-ready implementations
 - **Complete random image service with resizing**
 - **Dynamic image resizing with query parameters**
 - **Image optimization and caching**
+- **PDF generation, merging, and watermarking**
+- **Video transcoding, compression, and thumbnail generation**
+- **Excel/CSV parsing and conversion**
+- **ZIP archive creation and extraction**
+- **Audio format conversion and trimming**
 - Security-focused validation
 - Error handling patterns
 - Frontend integration
-- Complete API implementation
+- Complete API implementations for all file types
 
 ## Your Specific Use Case Covered
 
