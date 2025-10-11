@@ -1,6 +1,6 @@
 {
   "name": "devdocx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Offline documentation for JavaScript, Node, Express, Prisma, Auth, and more. Complete examples and notes inside node_modules.",
   "main": "index.js",
   "type": "module",
