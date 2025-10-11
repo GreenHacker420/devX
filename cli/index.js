@@ -11,8 +11,8 @@ const __dirname = path.dirname(__filename);
 const topic = process.argv[2];
 
 if (!topic) {
-  console.log(chalk.yellow('\n📘 DevDocsX - Offline Documentation\n'));
-  console.log(chalk.white('Usage: npx devdocsx <topic>\n'));
+  console.log(chalk.yellow('\n📘 devdocx - Offline Documentation\n'));
+  console.log(chalk.white('Usage: npx devdocx <topic>\n'));
   console.log(chalk.cyan('Available topics:'));
   console.log(chalk.white('  JavaScript:'));
   console.log(chalk.gray('    javascript/arrays, javascript/objects, javascript/functions'));
@@ -43,8 +43,8 @@ if (!topic) {
   console.log(chalk.gray('    node/fs-module.adv, node/streams.adv'));
   console.log(chalk.gray('    prisma/crud.adv, javascript/async-await.adv'));
   console.log(chalk.white('\nExamples:'));
-  console.log(chalk.gray('  npx devdocsx javascript/arrays'));
-  console.log(chalk.gray('  npx devdocsx express/file-uploads.adv\n'));
+  console.log(chalk.gray('  npx devdocx javascript/arrays'));
+  console.log(chalk.gray('  npx devdocx express/file-uploads.adv\n'));
   process.exit(0);
 }
 
@@ -60,7 +60,7 @@ if (fs.existsSync(docPath)) {
   // Check for advanced documentation
   if (fs.existsSync(advDocPath)) {
     console.log(chalk.magenta(`\n🚀 Advanced documentation available!`));
-    console.log(chalk.gray(`   Run: npx devdocsx ${topic}.adv\n`));
+    console.log(chalk.gray(`   Run: npx devdocx ${topic}.adv\n`));
   }
   
   console.log(chalk.cyan(`\n💡 Tip: You can also open this file directly at:`));
@@ -74,6 +74,6 @@ if (fs.existsSync(docPath)) {
   console.log(chalk.gray(`   ${advDocPath}\n`));
 } else {
   console.log(chalk.red(`\n❌ Topic not found: ${topic}\n`));
-  console.log(chalk.yellow('Run "npx devdocsx" without arguments to see available topics.\n'));
+  console.log(chalk.yellow('Run "npx devdocx" without arguments to see available topics.\n'));
   process.exit(1);
 }

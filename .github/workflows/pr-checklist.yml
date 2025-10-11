@@ -1,0 +1,38 @@
+name: PR Checklist Reminder
+
+on:
+  pull_request:
+    types: [opened, edited, reopened]
+
+jobs:
+  checklist-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR description has checklist
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr.body || '';
+
+            // Check if PR description contains checklist syntax
+            const hasChecklist = body.includes('- [ ]') || body.includes('- [x]');
+
+            if (!hasChecklist) {
+              await github.rest.issues.createComment({
+                issue_number: pr.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `👋 Thanks for your contribution! It looks like your PR description might be missing the checklist.\n\n` +
+                      `Please make sure to:\n` +
+                      `- ✅ Fill out the PR template completely\n` +
+                      `- ✅ Check all applicable boxes in the checklist\n` +
+                      `- ✅ Link any related issues\n` +
+                      `- ✅ Add a clear description of your changes\n\n` +
+                      `This helps us review your PR faster! 🚀\n\n` +
+                      `[View PR Template](https://github.com/GreenHacker420/devdocx/blob/main/.github/PULL_REQUEST_TEMPLATE.md)`
+              });
+            } else {
+              console.log("✅ Checklist found in PR description.");
+            }

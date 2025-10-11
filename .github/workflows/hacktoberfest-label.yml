@@ -1,0 +1,43 @@
+name: Label Hacktoberfest PRs
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  label-hacktoberfest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if October
+        id: check_month
+        run: |
+          month=$(date +%m)
+          if [ "$month" == "10" ]; then
+            echo "is_october=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_october=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Add Hacktoberfest label
+        if: steps.check_month.outputs.is_october == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['hacktoberfest']
+            })
+      
+      - name: Comment on PR
+        if: steps.check_month.outputs.is_october == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🎃 **Happy Hacktoberfest!** This PR has been automatically labeled for Hacktoberfest 2025. Thank you for contributing! 🚀'
+            })

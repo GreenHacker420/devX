@@ -1,0 +1,39 @@
+name: Greet New Contributors
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 Thanks for opening your first issue! Welcome to the devdocx community! 🎉
+            
+            A maintainer will review your issue soon. In the meantime:
+            - Make sure you've provided all necessary information
+            - Check if there are similar existing issues
+            - Feel free to join our discussions
+            
+            If you're interested in contributing, check out our [Contributing Guide](https://github.com/GreenHacker420/devdocx/blob/main/CONTRIBUTING.md)!
+            
+            Happy contributing! 🚀
+          pr-message: |
+            🎉 Thanks for opening your first pull request! Welcome to the devdocx community! 
+            
+            A maintainer will review your PR soon. Here's what happens next:
+            - Your PR will be reviewed for code quality and adherence to guidelines
+            - You may be asked to make some changes
+            - Once approved, your PR will be merged!
+            
+            Thank you for contributing to devdocx! 🙏
+            
+            ---
+            
+            **New to open source?** Check out our [Contributing Guide](https://github.com/GreenHacker420/devdocx/blob/main/CONTRIBUTING.md) for tips!

@@ -1,13 +1,33 @@
-# 📘 DevX
+# 📘 DevdocX
+
+[![npm version](https://img.shields.io/npm/v/@greenhacker420/devdocx.svg)](https://www.npmjs.com/package/@greenhacker420/devdocx)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-blueviolet)](https://hacktoberfest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Contributors](https://img.shields.io/github/contributors/GreenHacker420/devdocx.svg)](https://github.com/GreenHacker420/devdocx/graphs/contributors)
 
 > **Complete offline documentation for JavaScript, Node.js, Express, Prisma, and Auth — all in one NPM package!**
 
-DevX is an NPM package that installs comprehensive, example-rich documentation for backend development. Perfect for quick reference before exams, interviews, or while coding offline.
+devdocx is an NPM package that installs comprehensive, example-rich documentation for backend development. Perfect for quick reference before exams, interviews, or while coding offline.
+
+## 🎃 Hacktoberfest 2025
+
+**We're participating in Hacktoberfest 2025!** 🎉
+
+This is a great opportunity to contribute to open source and help improve documentation for developers worldwide. Whether you're fixing a typo or adding comprehensive new topics, all contributions are welcome!
+
+### How to Contribute
+1. Check out our [Contributing Guidelines](CONTRIBUTING.md)
+2. Look for issues labeled `hacktoberfest`, `good first issue`, or `help wanted`
+3. Fork the repo, make your changes, and submit a PR
+4. Get your PR reviewed and merged!
+
+**New to open source?** No worries! Check out our [Good First Issues](https://github.com/GreenHacker420/devdocx/labels/good%20first%20issue).
 
 ## 🚀 Installation
 
 ```bash
-npm install devx
+npm install devdocx
 ```
 
 ## 📖 Usage
@@ -17,7 +37,7 @@ npm install devx
 After installation, navigate to the docs folder:
 
 ```bash
-cd node_modules/devx/docs
+cd node_modules/devdocx/docs
 ```
 
 All documentation is organized in markdown files:
@@ -38,11 +58,11 @@ docs/
 Read documentation directly in your terminal:
 
 ```bash
-npx devx javascript/arrays
-npx devx express/middleware
-npx devx prisma/crud
-npx devx auth/jwt
-npx devx cheatsheets/javascript
+npx devdocx javascript/arrays
+npx devdocx express/middleware
+npx devdocx prisma/crud
+npx devdocx auth/jwt
+npx devdocx cheatsheets/javascript
 ```
 
 ## 📚 What's Included
@@ -107,7 +127,7 @@ npx devx cheatsheets/javascript
 ## 📂 Documentation Structure
 
 ```
-devdocsx/
+devdocx/
 ├── docs/
 │   ├── javascript/
 │   │   ├── arrays.md
@@ -181,49 +201,75 @@ devdocsx/
 ### Quick Reference
 ```bash
 # View JavaScript array methods
-npx devdocsx javascript/array-methods
+npx devdocx javascript/array-methods
 
 # Learn Express middleware
-npx devdocsx express/middleware
+npx devdocx express/middleware
 
 # File uploads and sending files
-npx devdocsx express/file-uploads
+npx devdocx express/file-uploads
 
 # Prisma CRUD operations
-npx devdocsx prisma/crud
+npx devdocx prisma/crud
 
 # JWT authentication
-npx devdocsx auth/jwt
+npx devdocx auth/jwt
 ```
 
 ### Browse in VS Code
 ```bash
-code node_modules/devdocsx/docs
+code node_modules/devdocx/docs
 ```
 
 ### Open Specific File
 ```bash
 # macOS
-open node_modules/devdocsx/docs/javascript/arrays.md
+open node_modules/devdocx/docs/javascript/arrays.md
 
 # Linux
-xdg-open node_modules/devdocsx/docs/javascript/arrays.md
+xdg-open node_modules/devdocx/docs/javascript/arrays.md
 
 # Windows
-start node_modules/devdocsx/docs/javascript/arrays.md
+start node_modules/devdocx/docs/javascript/arrays.md
 ```
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new topics
-- Improve existing documentation
-- Add more examples
+We love contributions! Devdevdocx is a community-driven project and we welcome contributions of all kinds.
+
+### Ways to Contribute
+
+- 📝 **Add new documentation** - Create docs for new technologies (TypeScript, React, MongoDB, etc.)
+- ✏️ **Improve existing docs** - Fix typos, add examples, clarify explanations
+- 🐛 **Report bugs** - Help us identify and fix issues
+- 💡 **Suggest features** - Share ideas for new features or improvements
+- ❓ **Add interview questions** - Share common interview questions and answers
+- 📄 **Create cheatsheets** - Quick reference guides for any technology
+
+### Getting Started
+
+1. **Read the [Contributing Guidelines](CONTRIBUTING.md)**
+2. **Check out [Good First Issues](https://github.com/GreenHacker420/devdocx/labels/good%20first%20issue)**
+3. **Fork the repository**
+4. **Make your changes**
+5. **Submit a Pull Request**
+
+### Contribution Ideas
+
+- Add TypeScript documentation
+- Create Next.js guides
+- Add MongoDB/PostgreSQL docs
+- Improve code examples with more comments
+- Add diagrams and visualizations
+- Create video tutorials
+- Translate documentation
+
+Check our [open issues](https://github.com/GreenHacker420/devdocx/issues) or [create a new one](https://github.com/GreenHacker420/devdocx/issues/new/choose)!
+
 
 ## 📝 License
 
-MIT © Harsh Hirawat
+MIT © Harsh Hirawat aka Green Hacker
 
 ## 🙏 Acknowledgments
 

@@ -245,10 +245,10 @@ All implementations include:
 
 ```bash
 # View in terminal
-npx devdocsx express/file-uploads
+npx devdocx express/file-uploads
 
 # Or browse directly
-cd node_modules/devdocsx/docs/express
+cd node_modules/devdocx/docs/express
 open file-uploads.md
 ```
 

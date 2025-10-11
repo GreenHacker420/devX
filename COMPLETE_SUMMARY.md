@@ -2,7 +2,7 @@
 
 ## 🎉 What Was Accomplished
 
-Your DevX documentation package now has a **comprehensive two-tier structure** with both basic and advanced documentation for all major topics.
+Your devdocx documentation package now has a **comprehensive two-tier structure** with both basic and advanced documentation for all major topics.
 
 ---
 
@@ -248,16 +248,16 @@ Your DevX documentation package now has a **comprehensive two-tier structure** w
 ### Usage Examples
 ```bash
 # View basic documentation
-npx devdocsx express/middleware
+npx devdocx express/middleware
 
 # View advanced documentation
-npx devdocsx express/middleware.adv
+npx devdocx express/middleware.adv
 
 # View file uploads advanced
-npx devdocsx express/file-uploads.adv
+npx devdocx express/file-uploads.adv
 
 # View Node.js streams advanced
-npx devdocsx node/streams.adv
+npx devdocx node/streams.adv
 ```
 
 ---
@@ -265,7 +265,7 @@ npx devdocsx node/streams.adv
 ## 📁 File Structure
 
 ```
-devdocsx/
+devdocx/
 ├── docs/
 │   ├── express/
 │   │   ├── middleware.md           # Basic
@@ -326,9 +326,9 @@ devdocsx/
 
 1. **Basics First**
    ```bash
-   npx devdocsx express/middleware
-   npx devdocsx node/fs-module
-   npx devdocsx prisma/crud
+   npx devdocx express/middleware
+   npx devdocx node/fs-module
+   npx devdocx prisma/crud
    ```
 
 2. **Practice Fundamentals**
@@ -338,9 +338,9 @@ devdocsx/
 
 3. **Advanced Topics**
    ```bash
-   npx devdocsx express/middleware.adv
-   npx devdocsx node/fs-module.adv
-   npx devdocsx prisma/crud.adv
+   npx devdocx express/middleware.adv
+   npx devdocx node/fs-module.adv
+   npx devdocx prisma/crud.adv
    ```
 
 4. **Apply in Projects**
@@ -454,7 +454,7 @@ Complete with:
 ### For You
 1. **Explore the advanced docs**
    ```bash
-   npx devdocsx express/file-uploads.adv
+   npx devdocx express/file-uploads.adv
    ```
 
 2. **Try the examples**
@@ -501,22 +501,22 @@ You now have a **comprehensive, production-ready documentation package** that co
 
 ```bash
 # File Processing
-npx devdocsx express/file-uploads.adv
+npx devdocx express/file-uploads.adv
 
 # Middleware Patterns
-npx devdocsx express/middleware.adv
+npx devdocx express/middleware.adv
 
 # File System
-npx devdocsx node/fs-module.adv
+npx devdocx node/fs-module.adv
 
 # Streams
-npx devdocsx node/streams.adv
+npx devdocx node/streams.adv
 
 # Database
-npx devdocsx prisma/crud.adv
+npx devdocx prisma/crud.adv
 
 # Async Programming
-npx devdocsx javascript/async-await.adv
+npx devdocx javascript/async-await.adv
 ```
 
 ---

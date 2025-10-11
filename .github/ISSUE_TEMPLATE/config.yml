@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Question or Discussion
+    url: https://github.com/GreenHacker420/devdocx/discussions
+    about: Ask questions or start discussions about the project
+  - name: 📚 Documentation
+    url: https://github.com/GreenHacker420/devdocx#readme
+    about: Check out the README and documentation

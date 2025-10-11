@@ -76,10 +76,10 @@ The documentation now follows a **two-tier structure**:
 
 ```bash
 # View basic documentation
-npx devdocsx express/middleware
+npx devdocx express/middleware
 
 # View advanced documentation
-npx devdocsx express/middleware.adv
+npx devdocx express/middleware.adv
 
 # The CLI will notify you if advanced docs are available
 ```
@@ -88,7 +88,7 @@ npx devdocsx express/middleware.adv
 
 ```bash
 # Navigate to docs
-cd node_modules/devdocsx/docs
+cd node_modules/devdocx/docs
 
 # Basic docs
 cat express/middleware.md
@@ -110,10 +110,10 @@ cat express/middleware.adv.md
 
 ```bash
 # Step 1: Learn basics
-npx devdocsx express/file-uploads
+npx devdocx express/file-uploads
 
 # Step 2: Learn advanced techniques
-npx devdocsx express/file-uploads.adv
+npx devdocx express/file-uploads.adv
 ```
 
 ## 📊 Content Statistics

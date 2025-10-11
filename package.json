@@ -1,11 +1,11 @@
 {
-  "name": "devx",
+  "name": "devdocx",
   "version": "1.0.0",
   "description": "Offline documentation for JavaScript, Node, Express, Prisma, Auth, and more. Complete examples and notes inside node_modules.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "devx": "./cli/index.js"
+    "devdocx": "./cli/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,12 @@
     "examples",
     "auth",
     "middleware",
-    "cheatsheet"
+    "cheatsheet",
+    "hacktoberfest",
+    "learning",
+    "interview",
+    "reference",
+    "offline"
   ],
   "author": "Harsh Hirawat",
   "license": "MIT",
@@ -32,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Greenhacker420/devx.git"
+    "url": "https://github.com/GreenHacker420/devdocx.git"
   },
   "bugs": {
-    "url": "https://github.com/Greenhacker420/devx/issues"
+    "url": "https://github.com/GreenHacker420/devdocx/issues"
   },
-  "homepage": "https://github.com/Greenhacker420/devx#readme"
+  "homepage": "https://github.com/GreenHacker420/devdocx#readme"
 }

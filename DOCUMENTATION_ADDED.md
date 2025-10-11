@@ -94,7 +94,7 @@ This comprehensive guide covers:
 
 #### 12. **Common MIME Types Reference**
    - Images (JPG, PNG, GIF, WebP, SVG)
-   - Documents (PDF, DOC, DOCX, XLS, XLSX)
+   - Documents (PDF, DOC, devdocx, XLS, XLSX)
    - Text files (TXT, CSV, HTML, CSS, JS, JSON)
    - Video (MP4, AVI, MOV)
    - Audio (MP3, WAV)
@@ -105,7 +105,7 @@ This comprehensive guide covers:
 ### 1. `/README.md`
    - Added "File Uploads" to Express section features
    - Added `file-uploads.md` to documentation structure
-   - Added example CLI command: `npx devdocsx express/file-uploads`
+   - Added example CLI command: `npx devdocx express/file-uploads`
 
 ### 2. `/docs/cheatsheets/express.md`
    - Added "File Upload (Multer)" quick reference section
@@ -119,10 +119,10 @@ Users can now access this documentation via:
 
 ```bash
 # View in terminal
-npx devdocsx express/file-uploads
+npx devdocx express/file-uploads
 
 # Or browse the file directly
-cd node_modules/devdocsx/docs/express
+cd node_modules/devdocx/docs/express
 open file-uploads.md
 ```
 
