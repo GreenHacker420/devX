@@ -1,13 +1,13 @@
-# 📘 DevDocsX
+# 📘 DevX
 
 > **Complete offline documentation for JavaScript, Node.js, Express, Prisma, and Auth — all in one NPM package!**
 
-DevDocsX is an NPM package that installs comprehensive, example-rich documentation for backend development. Perfect for quick reference before exams, interviews, or while coding offline.
+DevX is an NPM package that installs comprehensive, example-rich documentation for backend development. Perfect for quick reference before exams, interviews, or while coding offline.
 
 ## 🚀 Installation
 
 ```bash
-npm install devdocsx
+npm install devx
 ```
 
 ## 📖 Usage
@@ -17,7 +17,7 @@ npm install devdocsx
 After installation, navigate to the docs folder:
 
 ```bash
-cd node_modules/devdocsx/docs
+cd node_modules/devx/docs
 ```
 
 All documentation is organized in markdown files:
@@ -38,11 +38,11 @@ docs/
 Read documentation directly in your terminal:
 
 ```bash
-npx devdocsx javascript/arrays
-npx devdocsx express/middleware
-npx devdocsx prisma/crud
-npx devdocsx auth/jwt
-npx devdocsx cheatsheets/javascript
+npx devx javascript/arrays
+npx devx express/middleware
+npx devx prisma/crud
+npx devx auth/jwt
+npx devx cheatsheets/javascript
 ```
 
 ## 📚 What's Included
@@ -58,7 +58,7 @@ npx devdocsx cheatsheets/javascript
 
 ### Express
 - **Basics**: Setup, Routing, Middleware
-- **Advanced**: Error Handling, Cookie Parser, Auth Flow
+- **Advanced**: Error Handling, Cookie Parser, Auth Flow, File Uploads
 - **Best Practices**: Security, validation, async handling
 
 ### Prisma
@@ -136,7 +136,8 @@ devdocsx/
 │   │   ├── middleware.md
 │   │   ├── error-handling.md
 │   │   ├── cookie-parser.md
-│   │   └── auth-flow.md
+│   │   ├── auth-flow.md
+│   │   └── file-uploads.md
 │   │
 │   ├── prisma/
 │   │   ├── setup.md
@@ -184,6 +185,9 @@ npx devdocsx javascript/array-methods
 
 # Learn Express middleware
 npx devdocsx express/middleware
+
+# File uploads and sending files
+npx devdocsx express/file-uploads
 
 # Prisma CRUD operations
 npx devdocsx prisma/crud

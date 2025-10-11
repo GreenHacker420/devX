@@ -25,6 +25,7 @@ if (!topic) {
   console.log(chalk.white('\n  Express:'));
   console.log(chalk.gray('    express/setup, express/routing, express/middleware'));
   console.log(chalk.gray('    express/error-handling, express/cookie-parser, express/auth-flow'));
+  console.log(chalk.gray('    express/file-uploads'));
   console.log(chalk.white('\n  Prisma:'));
   console.log(chalk.gray('    prisma/setup, prisma/schema, prisma/crud'));
   console.log(chalk.gray('    prisma/filters, prisma/relations, prisma/transactions, prisma/pagination'));
