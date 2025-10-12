@@ -14,7 +14,7 @@ npx prisma migrate dev
 npx prisma studio
 ```
 
-## 📝 Schema
+## 📝 Schema 
 
 ```prisma
 model User {
