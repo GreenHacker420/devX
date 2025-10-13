@@ -1,6 +1,6 @@
 # 📘 DevdocX
 
-[![npm version](https://img.shields.io/npm/v/@greenhacker420/devdocx.svg)](https://www.npmjs.com/package/@greenhacker420/devdocx)
+[![npm version](https://img.shields.io/npm/v/devdocx.svg)](https://www.npmjs.com/package/devdocx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-blueviolet)](https://hacktoberfest.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
